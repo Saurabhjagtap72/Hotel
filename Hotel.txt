@@ -1,0 +1,157 @@
+import java.util.Scanner;
+class Hotel
+{
+	public static void main(String[] args) 
+	{
+		Scanner s = new Scanner(System.in);
+		System.out.println("**********WELCOME**********");
+
+        System.out.println("**********ENTER YOUR FAVOURITE SECTION***********");
+
+		System.out.println("************1.VEG***********");
+
+		System.out.println("************2.NON-VEG************");
+		
+		int a = s.nextInt();
+		
+
+		switch (a)
+		{
+
+			case 1:
+			{
+                                System.out.println("**********WELCOM TO YOUR FAVOURITE SECTION**********");
+				                System.out.println("MENU FOR VEG");
+				
+				System.out.println("1.chai");
+				System.out.println("2.Poha");
+				System.out.println("3.Kichadi");
+				System.out.println("4.Dosa");
+				System.out.println("5.Veg-Biryai");
+                 System.out.println("*******Slect Your fav Dish******");
+				int input = s.nextInt();
+          
+
+				switch (input)
+				{
+				
+				
+					case 1:
+					{
+                         System.out.println("You have selected for Chai...");
+						System.out.println("Select no. of cups...");
+					
+						int num = s.nextInt();
+						int price = 10;
+						int amount = price*num;
+
+						
+						System.out.println("Amount you to pay is : "+ amount);
+                        System.out.println("VISITE AGAIN ");
+                        break;
+					}
+                    case 2:
+					{	System.out.println("You have selected for Poha...");
+						System.out.println("Select no. of Plates...");
+					
+						int num = s.nextInt();
+						int price = 40;
+						int amount = price*num;
+
+						
+						System.out.println("Amount you to pay is : "+ amount);
+                         System.out.println("VISITE AGAIN");
+                        break;
+
+					}
+                     case 3:
+                     {
+						System.out.println("You have selected Kichadi ....");
+                        System.out.println("Select the no of plates.... ");
+
+                        int num= s.nextInt();
+                        int prise= 40;
+                        int amount=prise*num;
+                        System.out.println("Amount yo pay to is..."+ amount);  
+                           System.out.println("VISITE AGAIN ");   
+                            break;
+                     }
+                   case 4:
+                     {
+                         System.out.println("You have selected DOSA.");
+                          System.out.println("Select NO of plates...");
+                           
+                           int num=s.nextInt();
+                             int  prise = 60;
+                            int amount = prise*num;
+                          System.out.println("Amount you to pay " +amount);
+                             System.out.println("VISITE AGAIN ");   
+                            break ;
+					
+                      }
+                    case 5:{
+						System.out.println("You are select veg-Biryani..");
+                        System.out.println("Select no of Plates ");
+                        int num=s.nextInt();
+                        int prise= 120;
+                        int amount=num*prise;
+                        System.out.println("Amount you to pay" + amount); 
+                         System.out.println("VISITE AGAIN ");   
+                         break;          
+                          }
+			}
+			}
+      
+            case 2: 
+                         
+                         System.out.println("**********WELCOM TO YOUR FAVOURITE SECTION**********");			
+                         System.out.println("**********MENU FOR VEG");
+                         
+                          System.out.println("1.Chicken-LEG");
+                          System.out.println("2.Muttan");
+                          System.out.println("3.Boill-Chicken");
+                          System.out.println("***** SELECT YOUR Fv DISH*******");
+                          int b = s.nextInt();
+                    
+                     switch(b)
+                           {
+							case 1:
+                                 {
+									System.out.println("You are selected CHICKEN-BIRYANI");
+                                    System.out.println("Enter no of plates....");
+                                    int num =s.nextInt(); 
+                                    int prise = 120;          
+                                    int  amount = num*prise ;
+                                       System.out.println("You need to pya for it chargershu"  + amount);
+                                       System.out.println("VISITE AGAIN ");   
+                                       break;
+                                   
+                                 }
+                             case 2: 
+                                 {
+									System.out.println("You are selected MUttun");
+                                    System.out.println("ENter your no of plates...");
+                                    int num=s.nextInt();
+                                    int prise=150;
+                                    int amount=num*prise;
+                                    System.out.println("Total to pay for " + amount);
+                                    System.out.println("VISITE AGAIN ");   
+                                    break;
+                                 }
+                             case 3:
+                                 {
+								        System.out.println("You to select BOILL-Chicken ");
+                                        System.out.println("Enter no if Plates ");
+                                        int num=s.nextInt();
+                                        int prise = 160;
+                                        int amount= prise*num;
+                                        System.out.println("You want to pay this amount " + amount );
+                                        System.out.println("VISITE AGAIN ");   
+                                        break;
+                                        
+                                 } 
+                           } 
+
+	}
+}
+}
